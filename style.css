@@ -375,13 +375,13 @@ section .title::after{
     width: 60%;
 }
 .skills-content .right .js::before{
-    width: 40%;
+    width: 30%;
 }
 .skills-content .right .php::before{
-    width: 20%;
+    width: 40%;
 }
 .skills-content .right .mysql::before{
-    width: 20%;
+    width: 50%;
 }
 
 /* contact section styling */
