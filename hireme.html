@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Me Form - Mondip Das</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #72c0ad;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #b2cbea;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-weight: bolder;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+            color: #555;
+            font-weight: bold;
+        }
+        input, textarea, select {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hire Me</h1>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="role">Role</label>
+            <select id="role" name="role" required>
+                <option value="Web Designer">Web Designer</option>
+                <option value="Digital Marketer">Digital Marketer</option>
+                <option value="App Designer">App Designer</option>
+            </select>
+
+            <label for="budget">Budget</label>
+            <input type="text" id="budget" name="budget" required>
+
+            <label for="deadline">Deadline</label>
+            <input type="date" id="deadline" name="deadline" required>
+
+            <label for="description">Project Description</label>
+            <textarea id="description" name="description" rows="5" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
