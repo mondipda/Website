@@ -20,7 +20,6 @@
                 <li><a href="#about" class="menu-btn">About</a></li>
                 <li><a href="#services" class="menu-btn">Services</a></li>
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#" class="menu-btn">Teams</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
@@ -35,8 +34,8 @@
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Mondip Das</div>
-                <div class="text-3">And I'm a <span class="typing">Developoer</span></div>
-                <a href="#">Hire me</a>
+                <div class="text-3">And I'm a <span class="typing">Developer</span></div>
+                <a href="#contact">Hire me</a>
             </div>
         </div>
     </section>
@@ -47,12 +46,12 @@
             <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="images/fb.jpg" alt="">
+                    <img src="ProfileMondip.png" alt="">
                 </div>
                 <div class="column right">
                     <div class="text">I'm Mondip and I'm a <span class="typing-2"></span></div>
                     <p>A Web Developer with three years of experience specializing in HTML5, JavaScript, PHP, MySQL, database design, and front-end development. Adept at collaborating with dynamic teams to build high-quality websites and identify opportunities to enhance the user experience.</p>
-                    <a href="MondipNew-9-1.pdf">Download CV</a>
+                    <a href="MondipNew.pdf">Download CV</a>
                 </div>
             </div>
         </div>
@@ -103,14 +102,14 @@
                     <div class="bars">
                         <div class="info">
                             <span>HTML</span>
-                            <span>90%</span>
+                            <span>70%</span>
                         </div>
                         <div class="line html"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>CSS</span>
-                            <span>70%</span>
+                            <span>60%</span>
                         </div>
                         <div class="line css"></div>
                     </div>
@@ -124,14 +123,14 @@
                     <div class="bars">
                         <div class="info">
                             <span>PHP</span>
-                            <span>30%</span>
+                            <span>20%</span>
                         </div>
                         <div class="line php"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>MySQL</span>
-                            <span>30%</span>
+                            <span>20%</span>
                         </div>
                         <div class="line mysql"></div>
                     </div>
@@ -174,20 +173,20 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
+                    <form action="contact.php" method="post">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" name="name" placeholder="Name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" name="email" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" name="subject" placeholder="Subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                            <textarea name="message" cols="30" rows="10" placeholder="Message.." required></textarea>
                         </div>
                         <div class="button-area">
                             <button type="submit">Send message</button>
